@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Attraction {
   String? imgPath;
   String? name;
@@ -14,4 +16,12 @@ class Attraction {
     this.location,
     this.rating,
   });
+}
+
+class BottomBarItem {
+  String? label;
+  bool? isSelected;
+  IconData? icon;
+
+  BottomBarItem({this.label, this.isSelected, this.icon});
 }

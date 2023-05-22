@@ -3,6 +3,8 @@ import 'package:booking_app_ui/models/model.dart';
 import 'package:booking_app_ui/widgets/attraction_card.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/bottom_bar.dart';
+
 class ListPage extends StatelessWidget {
   const ListPage({super.key});
 
@@ -52,6 +54,7 @@ class ListPage extends StatelessWidget {
                   },
                 ),
               ),
+              BottomBarWidget(),
             ],
           ),
         ),
