@@ -17,7 +17,7 @@ class RatingWidget extends StatelessWidget {
             );
           }),
         ),
-        SizedBox(width: 5),
+        const SizedBox(width: 5),
         Text(
           '${rating!}/5 Reviews',
           style: TextStyle(

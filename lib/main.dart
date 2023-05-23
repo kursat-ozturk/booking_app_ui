@@ -1,4 +1,3 @@
-import 'package:booking_app_ui/pages/landing_page.dart';
 import 'package:booking_app_ui/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 

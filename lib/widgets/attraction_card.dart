@@ -10,7 +10,7 @@ class AttractionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(40),
@@ -24,7 +24,7 @@ class AttractionCard extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(40),
-        child: Container(
+        child: SizedBox(
           height: 300,
           child: Stack(
             children: [
@@ -41,7 +41,7 @@ class AttractionCard extends StatelessWidget {
                   ),
                   Container(
                     height: 150,
-                    padding: EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -50,7 +50,7 @@ class AttractionCard extends StatelessWidget {
                           children: [
                             Text(
                               attraction!.name!,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class AttractionCard extends StatelessWidget {
                                   Icons.pin_drop,
                                   color: Colors.grey.withOpacity(0.7),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Text(
                                   attraction!.location!,
                                   style: TextStyle(
@@ -71,7 +71,7 @@ class AttractionCard extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                               ],
                             ),
                             RatingWidget(rating: attraction!.rating!),
@@ -83,13 +83,13 @@ class AttractionCard extends StatelessWidget {
                           children: [
                             Text(
                               '\$${attraction!.price!.toStringAsFixed(2)}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
                             Text(
                               'Per Night',
                               style: TextStyle(
@@ -108,12 +108,12 @@ class AttractionCard extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: Container(
-                  child: Icon(
+                  child: const Icon(
                     Icons.favorite,
                     color: Colors.white,
                     size: 15,
                   ),
-                  margin: EdgeInsets.only(right: 10),
+                  margin: const EdgeInsets.only(right: 10),
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(

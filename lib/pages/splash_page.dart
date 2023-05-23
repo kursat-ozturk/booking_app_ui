@@ -10,7 +10,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => LandingPage()));
+          .push(MaterialPageRoute(builder: (context) => const LandingPage()));
     });
 
     return Stack(
@@ -18,7 +18,7 @@ class SplashPage extends StatelessWidget {
         Container(
           color: mainThemeColor,
         ),
-        Align(
+        const Align(
           alignment: Alignment.center,
           child: Icon(
             Icons.pool,

@@ -16,7 +16,7 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 15),
+      padding: const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(barItems.length, (index) {

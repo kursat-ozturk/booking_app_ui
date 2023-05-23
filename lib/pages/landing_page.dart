@@ -11,15 +11,15 @@ class LandingPage extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(
         child: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           alignment: Alignment.bottomLeft,
-          child: Icon(Icons.pool, color: mainThemeColor, size: 80),
+          child: const Icon(Icons.pool, color: mainThemeColor, size: 80),
         ),
       ),
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
                     'https://images.pexels.com/photos/261394/pexels-photo-261394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
@@ -31,13 +31,13 @@ class LandingPage extends StatelessWidget {
           AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
-            iconTheme: IconThemeData(color: Colors.white),
+            iconTheme: const IconThemeData(color: Colors.white),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
+              const Text(
                 'Paradise',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -46,16 +46,16 @@ class LandingPage extends StatelessWidget {
                   fontSize: 30,
                 ),
               ),
-              SizedBox(height: 60),
-              Icon(Icons.pool, color: Colors.white, size: 80),
-              SizedBox(height: 10),
+              const SizedBox(height: 60),
+              const Icon(Icons.pool, color: Colors.white, size: 80),
+              const SizedBox(height: 10),
               Text(
                 'Choose location to'.toUpperCase(),
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white.withOpacity(0.5)),
               ),
-              SizedBox(height: 5),
-              Text(
+              const SizedBox(height: 5),
+              const Text(
                 'Find a Hotel',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -64,8 +64,8 @@ class LandingPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20),
-              LandingSearchBar(),
+              const SizedBox(height: 20),
+              const LandingSearchBar(),
             ],
           ),
         ],

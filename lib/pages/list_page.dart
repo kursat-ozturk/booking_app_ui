@@ -13,14 +13,14 @@ class ListPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
         elevation: 0,
-        title: Icon(Icons.pool, color: Colors.white),
+        title: const Icon(Icons.pool, color: Colors.white),
         centerTitle: true,
         actions: [
           Container(
-            margin: EdgeInsets.only(right: 15),
-            child: Icon(
+            margin: const EdgeInsets.only(right: 15),
+            child: const Icon(
               Icons.notifications,
               color: Colors.white,
             ),
@@ -29,12 +29,12 @@ class ListPage extends StatelessWidget {
       ),
       backgroundColor: mainThemeColor,
       body: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(50),
           topRight: Radius.circular(50),
         ),
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(50),
@@ -54,7 +54,7 @@ class ListPage extends StatelessWidget {
                   },
                 ),
               ),
-              BottomBarWidget(),
+              const BottomBarWidget(),
             ],
           ),
         ),
