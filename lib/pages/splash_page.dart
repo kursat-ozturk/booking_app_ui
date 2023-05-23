@@ -1,7 +1,7 @@
 import 'package:booking_app_ui/main.dart';
 import 'package:flutter/material.dart';
 
-import 'list_page.dart';
+import 'landing_page.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -10,7 +10,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => ListPage()));
+          .push(MaterialPageRoute(builder: (context) => LandingPage()));
     });
 
     return Stack(
